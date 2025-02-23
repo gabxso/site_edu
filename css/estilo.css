@@ -1,0 +1,130 @@
+/* Define que todos os elementos usem o modelo de caixa border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página */
+body {
+    margin: 0; /* Remove margens padrão */
+    background-color: rgb(12, 12, 12); /* Define o fundo escuro */
+}
+
+/* Estiliza os parágrafos dentro do título */
+.titulo p {
+    text-indent: 8px; /* Recuo do início do parágrafo */
+    font-size: 18px; /* Tamanho da fonte */
+    color: whitesmoke; /* Cor do texto */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estiliza o título principal */
+.titulo {
+    padding: 20px; /* Espaçamento interno */
+    color: rgb(224, 187, 64); /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estiliza o menu de navegação */
+.menu {
+    background-color: rgb(51, 59, 51); /* Cor do fundo */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Alinha verticalmente */
+    padding: 10px 0; /* Espaçamento interno */
+    gap: 200px; /* Espaçamento entre os itens */
+}
+
+/* Estiliza os links dentro do menu */
+.menu a {
+    padding: 10px 15px; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+    transition: 0.3s; /* Animação suave */
+    color: rgb(187, 204, 211); /* Cor do texto */
+}
+
+/* Define a cor padrão do texto dentro das seções */
+#edu, #snow, #allaska, #conclusao {
+    color: rgb(255, 255, 255); /* Cor branca */
+}
+
+/* Estiliza os títulos <h1> das seções */
+#edu h1, #snow h1, #allaska h1, #conclusao h1, #combo {
+    text-align: center; /* Centraliza o texto */
+    border-left: 4px solid rgb(7, 219, 247); /* Borda à esquerda */
+    margin-left: 20px; /* Margem esquerda */
+    word-spacing: -1px; /* Ajusta espaçamento entre palavras */
+} 
+
+/* Define cores específicas para cada título */
+#edu h1 { color: rgb(121, 136, 185); } /* Azul claro */
+#snow h1 { color: rgb(123, 172, 187); } /* Azul acinzentado */
+#allaska h1 { color: rgb(202, 23, 122); } /* Rosa forte */
+#conclusao h1 { color: rgb(136, 120, 151); } /* Roxo acinzentado */
+
+/* Estiliza a seção com imagem centralizada */
+.fotodoeduardo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Exibe o texto abaixo da imagem */
+    text-align: center; /* Centraliza o texto */
+    height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+/* Garante que a imagem não ultrapasse os limites da tela */
+.fotodoeduardo img {
+    max-width: 100%; /* Mantém a largura proporcional */
+    height: auto;
+}
+
+/* Estiliza o parágrafo abaixo da imagem */
+.fotodoeduardo p {
+    color: rgb(196, 9, 9);
+    font-size: 18px;
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+}
+
+/* Estiliza todos os parágrafos padrão */
+p {
+    text-indent: 8px; /* Espaço no início da primeira linha */
+    font-size: 18px; /* Tamanho da fonte */
+    color: whitesmoke; /* Cor do texto */
+    text-align: left; /* Alinhamento à esquerda */
+    margin-left: 20px; /* Margem esquerda */
+}
+
+/* Efeito hover para os links do menu - cada um assumindo a cor do h1 correspondente */
+.edu:hover {
+    color: rgb(121, 136, 185); /* Azul claro (cor do h1 do edu) */
+    font-size: 19px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.snow:hover {
+    color: rgb(123, 172, 187); /* Azul acinzentado (cor do h1 do snow) */
+    font-size: 19px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.allaska:hover {
+    color: rgb(202, 23, 122); /* Rosa forte (cor do h1 do allaska) */
+    font-size: 19px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.conclusao:hover {
+    color: rgb(136, 120, 151); /* Roxo acinzentado (cor do h1 da conclusão) */
+    font-size: 19px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.img{
+    border: 2px dashed red;
+}
